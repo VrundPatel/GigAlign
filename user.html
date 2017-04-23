@@ -17,6 +17,7 @@
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -34,19 +35,37 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="index.html">GigAlign</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
+             </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" id="nav_name">Please Log In</a></li>
               </ul>
-            </div>
+           
+           
           </div>
         </nav>
 
       </div>
     </div>
+    <div>
+     
+    </div>
 
      <div class="container marketing" style="margin-top:70px;">
+     <div class="row">
+     <div class="col-md-2">
+      <div style="height:350px;">
+         <h4 class="custom-title">Accumeter:</h4>
+         <div class="text-center">
+          <img  class="img-responsive" src="images/GigAlign-3.png" width="100px">
+          <div style="margin-top:25px;" class="accuprolabel">0%</div>
+          </div>
+         <div class="vertical progress progress-striped active" style="width:200px;position:absolute;top:125px;left:50px;">
+             <div class="progress-bar progress-bar-danger accupro" style="width:0%;min-width:000em;font-weight:bold;"></div>
+         </div>
+         
+     </div>
+      </div>
+    <div class="col-md-10">
      <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 
 
@@ -55,140 +74,235 @@
 
       <div class="item active">
         <div class="well">
-          <h4>Tell us a little more about yourself...</h4>
+          <h4>Tell me a little more about yourself...</h4>
           <form class="form">
           <div class="form-group">
-            <label for="exampleInputName2">What's your name?</label>
-            <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+            <label for="exampleInputName2">What do you want me to call you?</label>
+            <input type="text" class="form-control" id="your_name" placeholder="Jane Doe">
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail2">What's a good email address?</label>
-            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+            <label for="exampleInputEmail2">What is your email addrees?</label>
+            <input type="email" class="form-control" id="your_email" placeholder="jane.doe@example.com">
+            <span id="helpBlock" class="help-block text-warning "><b><i class="fa fa-lightbulb-o"></i> By providing us with your email address, we will create an account for you and remember your progress.</b></span>
           </div>
 
         </form>
         <div class="btn-toolbar" role="toolbar" aria-label="...">
-        <button type="button"  class="btn btn-primary pull-right btnNext" data-toggle="button" aria-pressed="false" data-slide="next" autocomplete="off">
-          Continue <span class="glyphicon glyphicon-arrow-right"></span>
+        <button type="button"  class="btn btn-primary pull-right btnNext1" data-toggle="button" aria-pressed="false" data-slide="next" autocomplete="off">
+          Let's do this <span class="glyphicon glyphicon-arrow-right"></span>
         </button>
         </div>
         </div>
       </div>
-
       <div class="item ">
         <div class="well">
-          <h4>To help us find your best career path, tell us your interests.</h4>
+          <h4>Awesome! <span class="my_name">Alright</span>, tell me a little more about yourself.</h4>
+          <form class="form">
+           <div class="form-group">
+            <label for="exampleInputName2">How old are you?</label>
+            <input type="number" class="form-control" id="your_age" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputName2">Where do you live?</label>
+            <select id="selectState" class="form-control" style="width:100%;" >
+              <option value="Alabama ">Alabama </option>
+              <option value="Alaska ">Alaska </option>
+              <option value="Arizona ">Arizona </option>
+              <option value="Arkansas ">Arkansas </option>
+              <option value="California ">California </option>
+              <option value="Colorado ">Colorado </option>
+              <option value="Connecticut ">Connecticut </option>
+              <option value="Delaware ">Delaware </option>
+              <option value="Florida ">Florida </option>
+              <option value="Georgia ">Georgia </option>
+              <option value="Hawaii ">Hawaii </option>
+              <option value="Idaho ">Idaho </option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana ">Indiana </option>
+              <option value="Iowa ">Iowa </option>
+              <option value="Kansas ">Kansas </option>
+              <option value="Kentucky ">Kentucky </option>
+              <option value="Louisiana ">Louisiana </option>
+              <option value="Maine ">Maine </option>
+              <option value="Maryland ">Maryland </option>
+              <option value="Massachusetts ">Massachusetts </option>
+              <option value="Michigan ">Michigan </option>
+              <option value="Minnesota ">Minnesota </option>
+              <option value="Mississippi ">Mississippi </option>
+              <option value="Missouri ">Missouri </option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska ">Nebraska </option>
+              <option value="Nevada ">Nevada </option>
+              <option value="New Hampshire ">New Hampshire </option>
+              <option value="New Jersey ">New Jersey </option>
+              <option value="New Mexico ">New Mexico </option>
+              <option value="New York ">New York </option>
+              <option value="North Carolina ">North Carolina </option>
+              <option value="North Dakota ">North Dakota </option>
+              <option value="Ohio ">Ohio </option>
+              <option value="Oklahoma ">Oklahoma </option>
+              <option value="Oregon ">Oregon </option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island ">Rhode Island </option>
+              <option value="South Carolina ">South Carolina </option>
+              <option value="South Dakota ">South Dakota </option>
+              <option value="Tennessee ">Tennessee </option>
+              <option value="Texas ">Texas </option>
+              <option value="Utah ">Utah </option>
+              <option value="Vermont ">Vermont </option>
+              <option value="Virginia ">Virginia </option>
+              <option value="Washington ">Washington </option>
+              <option value="West Virginia ">West Virginia </option>
+              <option value="Wisconsin ">Wisconsin </option>
+              <option value="Wyoming">Wyoming</option>
+            </select>
+          </div>
+        </form>
+        <div class="btn-toolbar" role="toolbar" aria-label="...">
+        <button type="button"  class="btn btn-primary pull-right btnNext" data-toggle="button" aria-pressed="false" data-slide="next" autocomplete="off">
+          Keep on keepin' on <span class="glyphicon glyphicon-arrow-right"></span>
+        </button>
+        </div>
+        </div>
+        </div> <!-- Biography -->
+        <div class="item ">
+        <div class="well">
+          <h4>I love the Sunshine State! <span class="my_name">Alright</span>, consider connecting your social media accounts to GigAlign.</h4>
+          <div class="row">
+            <div class="col-md-12">
+              <img  class="img-responsive" src="images/social-media-icons.png">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              Click any of the icons above to link your account. By linking your account, I'll be able to learn more about you and recommend a better, more individualized path for your journey. 
+            </div>
+          </div>
+        <div class="btn-toolbar" role="toolbar" aria-label="...">
+        <button type="button"  class="btn btn-primary pull-right btnNext" data-toggle="button" aria-pressed="false" data-slide="next" autocomplete="off">
+          Next! <span class="glyphicon glyphicon-arrow-right"></span>
+        </button>
+        </div>
+        </div>
+        </div> <!-- Biography -->
+      <div class="item "> <!-- Activities -->
+        <div class="well">
+          <h4>You Rock! <span class="my_name">Alright</span>, what activities do you like? Also, what activities do you hate?</h4>
           <form class="form">
           <div class="form-group">
-            <label for="exampleInputName2"><span class="glyphicon glyphicon-thumbs-up" style="font-size:18px;"></span> Select activities from the list below that you enjoy.</label>
+            <label for="exampleInputName2"><span class="glyphicon glyphicon-thumbs-up text-success" style="font-size:18px;"></span> Select activities from the list below that you enjoy.</label>
             <select id="selectLike" class="form-control" style="width:100%;" multiple>
-              <option value="Underwater Basketweaving">Underwater Basketweaving</option>
-              <option value="Reading">Reading</option>
-              <option value="Watching TV">Watching TV</option>
-              <option value="Family Time">Family Time</option>
-              <option value="Going to Movies">Going to Movies</option>
-              <option value="Fishing">Fishing</option>
-              <option value="Computer">Computer</option>
-              <option value="Gardening">Gardening</option>
-              <option value="Renting Movies">Renting Movies</option>
-              <option value="Walking">Walking</option>
-              <option value="Exercise">Exercise</option>
-              <option value="Listening to Music">Listening to Music</option>
+              <option value="Animal Care">Animal Care</option>
+              <option value="Beach">Beach</option>
+              <option value="Bicycling">Bicycling</option>
+              <option value="Billiards">Billiards</option>
+              <option value="Boating">Boating</option>
+              <option value="Bowling">Bowling</option>
+              <option value="Camping">Camping</option>
+              <option value="Church Activities">Church Activities</option>
+              <option value="Computers">Computers</option>
+              <option value="Cooking">Cooking</option>
+              <option value="Crafts">Crafts</option>
+              <option value="Dancing">Dancing</option>
+              <option value="Dating Online">Dating Online</option>
+              <option value="Eating Out">Eating Out</option>
               <option value="Entertaining">Entertaining</option>
+              <option value="Exercise">Exercise</option>
+              <option value="Family Time">Family Time</option>
+              <option value="Fishing">Fishing</option>
+              <option value="Gaming">Gaming</option>
+              <option value="Gardening">Gardening</option>
+              <option value="Going to Movies">Going to Movies</option>
+              <option value="Golf">Golf</option>
+              <option value="Hiking">Hiking</option>
+              <option value="Horseback Riding">Horseback Riding</option>
+              <option value="Housework">Housework</option>
               <option value="Hunting">Hunting</option>
-              <option value="Team Sports">Team Sports</option>
+              <option value="Listening to Music">Listening to Music</option>
+              <option value="Motorcycling">Motorcycling</option>
+              <option value="Painting">Painting</option>
+              <option value="Playing Cards">Playing Cards</option>
+              <option value="Playing Music">Playing Music</option>
+              <option value="Reading">Reading</option>
+              <option value="Relaxing">Relaxing</option>
+              <option value="Renting Movies">Renting Movies</option>
+              <option value="Running">Running</option>
+              <option value="Sewing">Sewing</option>
               <option value="Shopping">Shopping</option>
-              <option value="Traveling">Traveling</option>
+              <option value="Skiing">Skiing</option>
               <option value="Sleeping">Sleeping</option>
               <option value="Socializing">Socializing</option>
-              <option value="Sewing">Sewing</option>
-              <option value="Golf">Golf</option>
-              <option value="Church Activities">Church Activities</option>
-              <option value="Relaxing">Relaxing</option>
-              <option value="Playing Music">Playing Music</option>
-              <option value="Housework">Housework</option>
-              <option value="Crafts">Crafts</option>
-              <option value="Watching Sports">Watching Sports</option>
-              <option value="Bicycling">Bicycling</option>
-              <option value="Playing Cards">Playing Cards</option>
-              <option value="Hiking">Hiking</option>
-              <option value="Cooking">Cooking</option>
-              <option value="Eating Out">Eating Out</option>
-              <option value="Dating Online">Dating Online</option>
               <option value="Swimming">Swimming</option>
-              <option value="Camping">Camping</option>
-              <option value="Skiing">Skiing</option>
-              <option value="Working on Cars">Working on Cars</option>
-              <option value="Writing">Writing</option>
-              <option value="Boating">Boating</option>
-              <option value="Motorcycling">Motorcycling</option>
-              <option value="Animal Care">Animal Care</option>
-              <option value="Bowling">Bowling</option>
-              <option value="Painting">Painting</option>
-              <option value="Running">Running</option>
-              <option value="Dancing">Dancing</option>
-              <option value="Horseback Riding">Horseback Riding</option>
+              <option value="Team Sports">Team Sports</option>
+              <option value="Technology / Electronics">Technology / Electronics</option>
               <option value="Tennis">Tennis</option>
               <option value="Theater">Theater</option>
-              <option value="Billiards">Billiards</option>
-              <option value="Beach">Beach</option>
+              <option value="Traveling">Traveling</option>
+              <option value="Underwater Basketweaving">Underwater Basketweaving</option>
               <option value="Volunteer Work">Volunteer Work</option>
+              <option value="Walking">Walking</option>
+              <option value="Watching Sports">Watching Sports</option>
+              <option value="Watching TV">Watching TV</option>
+              <option value="Working on Cars">Working on Cars</option>
+              <option value="Writing">Writing</option>
             </select>
           </div>
          <div class="form-group">
-            <label for="exampleInputName2"><span class="glyphicon glyphicon-thumbs-down" style="font-size:18px;"></span> Select activities from the list below that you DO NOT enjoy.</label>
+            <label for="exampleInputName2"><span class="glyphicon glyphicon-thumbs-down text-danger" style="font-size:18px;"></span> Select activities from the list below that you DO NOT enjoy.</label>
             <select id="selectDislike" class="form-control" style="width:100%;" multiple>
-              <option value="Underwater Basketweaving">Underwater Basketweaving</option>
-              <option value="Reading">Reading</option>
-              <option value="Watching TV">Watching TV</option>
-              <option value="Family Time">Family Time</option>
-              <option value="Going to Movies">Going to Movies</option>
-              <option value="Fishing">Fishing</option>
-              <option value="Computer">Computer</option>
-              <option value="Gardening">Gardening</option>
-              <option value="Renting Movies">Renting Movies</option>
-              <option value="Walking">Walking</option>
-              <option value="Exercise">Exercise</option>
-              <option value="Listening to Music">Listening to Music</option>
+              <option value="Animal Care">Animal Care</option>
+              <option value="Beach">Beach</option>
+              <option value="Bicycling">Bicycling</option>
+              <option value="Billiards">Billiards</option>
+              <option value="Boating">Boating</option>
+              <option value="Bowling">Bowling</option>
+              <option value="Camping">Camping</option>
+              <option value="Church Activities">Church Activities</option>
+              <option value="Computers">Computers</option>
+              <option value="Cooking">Cooking</option>
+              <option value="Crafts">Crafts</option>
+              <option value="Dancing">Dancing</option>
+              <option value="Dating Online">Dating Online</option>
+              <option value="Eating Out">Eating Out</option>
               <option value="Entertaining">Entertaining</option>
+              <option value="Exercise">Exercise</option>
+              <option value="Family Time">Family Time</option>
+              <option value="Fishing">Fishing</option>
+              <option value="Gaming">Gaming</option>
+              <option value="Gardening">Gardening</option>
+              <option value="Going to Movies">Going to Movies</option>
+              <option value="Golf">Golf</option>
+              <option value="Hiking">Hiking</option>
+              <option value="Horseback Riding">Horseback Riding</option>
+              <option value="Housework">Housework</option>
               <option value="Hunting">Hunting</option>
-              <option value="Team Sports">Team Sports</option>
+              <option value="Listening to Music">Listening to Music</option>
+              <option value="Motorcycling">Motorcycling</option>
+              <option value="Painting">Painting</option>
+              <option value="Playing Cards">Playing Cards</option>
+              <option value="Playing Music">Playing Music</option>
+              <option value="Reading">Reading</option>
+              <option value="Relaxing">Relaxing</option>
+              <option value="Renting Movies">Renting Movies</option>
+              <option value="Running">Running</option>
+              <option value="Sewing">Sewing</option>
               <option value="Shopping">Shopping</option>
-              <option value="Traveling">Traveling</option>
+              <option value="Skiing">Skiing</option>
               <option value="Sleeping">Sleeping</option>
               <option value="Socializing">Socializing</option>
-              <option value="Sewing">Sewing</option>
-              <option value="Golf">Golf</option>
-              <option value="Church Activities">Church Activities</option>
-              <option value="Relaxing">Relaxing</option>
-              <option value="Playing Music">Playing Music</option>
-              <option value="Housework">Housework</option>
-              <option value="Crafts">Crafts</option>
-              <option value="Watching Sports">Watching Sports</option>
-              <option value="Bicycling">Bicycling</option>
-              <option value="Playing Cards">Playing Cards</option>
-              <option value="Hiking">Hiking</option>
-              <option value="Cooking">Cooking</option>
-              <option value="Eating Out">Eating Out</option>
-              <option value="Dating Online">Dating Online</option>
               <option value="Swimming">Swimming</option>
-              <option value="Camping">Camping</option>
-              <option value="Skiing">Skiing</option>
-              <option value="Working on Cars">Working on Cars</option>
-              <option value="Writing">Writing</option>
-              <option value="Boating">Boating</option>
-              <option value="Motorcycling">Motorcycling</option>
-              <option value="Animal Care">Animal Care</option>
-              <option value="Bowling">Bowling</option>
-              <option value="Painting">Painting</option>
-              <option value="Running">Running</option>
-              <option value="Dancing">Dancing</option>
-              <option value="Horseback Riding">Horseback Riding</option>
+              <option value="Team Sports">Team Sports</option>
+              <option value="Technology / Electronics">Technology / Electronics</option>
               <option value="Tennis">Tennis</option>
               <option value="Theater">Theater</option>
-              <option value="Billiards">Billiards</option>
-              <option value="Beach">Beach</option>
+              <option value="Traveling">Traveling</option>
+              <option value="Underwater Basketweaving">Underwater Basketweaving</option>
               <option value="Volunteer Work">Volunteer Work</option>
+              <option value="Walking">Walking</option>
+              <option value="Watching Sports">Watching Sports</option>
+              <option value="Watching TV">Watching TV</option>
+              <option value="Working on Cars">Working on Cars</option>
+              <option value="Writing">Writing</option>
             </select>
           </div>
 
@@ -201,22 +315,58 @@
         </div>
       </div>
 
+        </div>
+
+        </div>
+        </div>
         </div>
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="http://getbootstrap.com/examples/carousel/#">Back to top</a></p>
-        <p>© 2016 Company, Inc. · <a href="http://getbootstrap.com/examples/carousel/#">Privacy</a> · <a href="http://getbootstrap.com/examples/carousel/#">Terms</a></p>
+        <p class="text-center">© 2017 GigAlign, Inc.</p>
       </footer>
 
     </div><!-- /.container -->
+
+    <div id="wecome_modal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Hi! I'm Al!</h4>
+      </div>
+      <div class="modal-body">
+      <div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img  class="media-object" src="images/GigAlign-3.png" width="100px">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">It's nice to meet you!</h4>
+    <p>I'll be your Sherpa, shining a light to help you find your way, roundhouse kick all the noise and distractions that stand in your way, and assit you all the way to the peak of the mountain to find your perfect Gig.</p>
+    <p>
+    As we embark on this voyage together, I'll ask you questions so that I can get to know you better. As I learn more about you, I'll calculate your Accumeter score and display that on the screen. The Accumeter is a range from zero, meaning I don't know you, to 100 meaning I'm the long lost twin you never had.
+    </p>
+    <p>
+    If at any time, you want to skip ahead and start exploring your options you can see what I can offer you at the current Accumeter level.  Afterwards, you can always return and answer addition questions to bump up the Accumeter.
+    </p>
+  </div>
+</div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-check"></i> I'm ready to rock!</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-<<<<<<< HEAD
-=======
+
     <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -229,24 +379,56 @@
          $('#selectLike').select2({
           placeholder: "",
           allowClear: true});
-         $('#selectDislike').select2({
+         $('#selectDislike, #selectState').select2({
           placeholder: "",
           allowClear: true});
+
 
          $('#selectLike').on('select2:select', function(evt) {
            $('#selectDislike').find('option[value="'+evt.params.data.id+'"]').prop('disabled','true');
            $('#selectDislike').select2().trigger('change');
+           bump_score();
          });
          $('#selectDislike').on('select2:select', function(evt) {
            $('#selectLike').find('option[value="'+evt.params.data.id+'"]').prop('disabled','true');
            $('#selectLike').select2().trigger('change');
+           bump_score();
          });
-        $('.btnNext').on('click', function() {
+        $('.btnNext1').on('click', function() {
+          var my_name = $('#your_name').val();
+          $('#nav_name').text('Hi ' + my_name + '!');
+          if (my_name) {
+            $('.my_name').text(my_name);
+          }
           $('#mycarousel').carousel('next');
         });
+        $('.btnNext').on('click', function() {
+          $('#nav_name').text('Hi ' + $('#your_name').val() + '!');
+          $('#mycarousel').carousel('next');
+        });
+        $('#your_name').on('change', function() {
+          bump_score();
+        });
+        $('#your_email, #your_age').on('change', function() {
+          bump_score();
+        });
+        $('#selectState').on('select2:select', function() {
+          bump_score();
+        });
+
+
+        $('#wecome_modal').modal('show');
       });
+      function bump_score(amount) {
+        amount = amount || 1;
+        var score = parseInt($('.accuprolabel').text(), 10);
+
+        score = score + amount;
+        $('.accuprolabel').text(score.toString() + '%');
+        $('.accupro').css('width', score.toString()+'%');
+      }
     </script>
->>>>>>> ddd8c41b20a266eff6d27a967f80ffe6bb353eb0
+
 
 
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg></body></html>
